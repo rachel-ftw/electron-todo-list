@@ -2,18 +2,27 @@
   "description": "A simple desktop react/redux/electron to do list app.",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node server.js"
+    "start": "nodemon --exec babel-node --presets react,env server.js",
+    "start-redux": "react-scripts start",
+    "build-redux": "react-scripts build",
+    "webpack": "webpack -w -d"
   },
   "dependencies": {
+    "babel-loader": "^7.1.2",
     "express": "^4.15.5",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "nodemon": "^1.12.1",
+    "react-scripts": "^1.0.13",
+    "redux-devtools": "^3.4.0",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
   }
