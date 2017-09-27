@@ -14,3 +14,8 @@ export const toggleTodo = (id) => ({
   type: 'TOGGLE_TODO',
   id
 })
+
+export const toggleFavorite = (id) => ({
+  type: 'TOGGLE_FAVORITE',
+  id
+})
